@@ -1,0 +1,71 @@
+RatingJson={
+        "title": "End of Block Survey",
+        "description": "The following statements inquire about your thoughts and feelings in the part of the experiment you just finished.",
+        "requiredText": "",
+        "elements": [
+            {
+                "type": "html",
+                "html": "<div class='container'><div class='row'><div class='col'><div class='page header'><h3 align='center'></h3></div></div></div><div class='row'><div class='col'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div></div></div>"      
+            },
+            {         
+                "type": "rating",
+                "name": "rating_actor",
+                "title": "{target_title}",
+                "isRequired": true,
+                "rateMax": 5,
+                "mininumRateDescription": "Rethinking the situation from a different viewpoint",
+                "maximumRateDescription": "Doing something to be distracted from the situation",
+                "startWithNewLine": true,
+                "hideNumber": false
+           
+            },
+            {
+                "type": "html",
+                "html": "<div class='container'><div class='row'><div class='col'><div class='page header'><h3 align='center'></h3></div></div></div><div class='row'><div class='col'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div></div></div>"      
+            },
+            {         
+                "type": "radiogroup",
+                "name": "rating_actor",
+                "title": "{advisor_title}",
+                "isRequired": true,
+                "choices": [
+                    "Rethinking the situation from a different viewpoint",
+                    "Doing something to be distracted from the situation",
+                    "I have no idea"
+                ]                 
+            },
+            {
+                "type": "html",
+                "html": "<div class='container'><div class='row'><div class='col'><div class='page header'><h3 align='center'></h3></div></div></div><div class='row'><div class='col'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div></div></div>"      
+            },
+            {         
+                "type": "rating",
+                "name": "rating_actor",
+                "title": "{advisor_title}",
+                "isRequired": true,
+                "rateMax": 5,
+                "mininumRateDescription": "Rethinking the situation from a different viewpoint",
+                "maximumRateDescription": "Doing something to be distracted from the situation",
+                "startWithNewLine": true,
+                "hideNumber": false
+           
+            },
+            {
+                "type": "html",
+                "html": "<div class='container'><div class='row'><div class='col'><div class='page header'><h3 align='center'></h3></div></div></div><div class='row'><div class='col'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div></div></div>"      
+            },
+            {         
+                "type": "rating",
+                "name": "rating_actor",
+                "title": "{new_target_title}",
+                "isRequired": true,
+                "rateMax": 5,
+                "mininumRateDescription": "Rethinking the situation from a different viewpoint",
+                "maximumRateDescription": "Doing something to be distracted from the situation",
+                "startWithNewLine": true,
+                "hideNumber": false
+           
+            },
+                
+        ]
+}

@@ -1,0 +1,243 @@
+data_female={ "data": [
+    {
+        "situation": "I am recently receiving \"C\"s in my tests.",
+        "situation_type": "1",
+        "strategy_1": "Try not to think about it too much, go to the nearest coffee place and have a good time.",
+        "strategy_2": "Those are the first tests of the semester. You'll have an opportunity to improve the grades later."
+    },
+    {
+        "situation": "My personal computer won't turn on.",
+        "situation_type": "1",
+        "strategy_1": "Don't be upset, your favorite band is putting on a show tonight, you can go see them.",
+        "strategy_2": "You are working so hard lately. You can use this time off to take a break from work for a while."
+    },
+    {
+        "situation": "I've spent the night in the ER after a car crash.",
+        "situation_type": "1",
+        "strategy_1": "Try to keep it together, go have some good rest at home and do something you enjoy.",
+        "strategy_2": "Even the most careful drivers get into accidents. At least you are okay and can go home."
+    },
+    {
+        "situation": "I've noticed that my car is slightly damaged.",
+        "situation_type": "1",
+        "strategy_1": "Be positive, go hiking in the mountains up north, nature and fresh air can do you good.",
+        "strategy_2": "Maybe someone was in a rush at the parking lot. You can fix the previous scratches as well."
+    },
+    {
+        "situation": "My internet provider will be off for about a week.",
+        "situation_type": "1",
+        "strategy_1": "Forget about it for a while, go to a bar downtown, have a drink, meet new people and unwind.",
+        "strategy_2": "This is only one week of your life. You have other interests that do not involve being online."
+    },
+    {
+        "situation": "There was an earthquake in my city.",
+        "situation_type": "1",
+        "strategy_1": "Try not to think about scary stuff, go for a walk on the beach, catch some air and sun.",
+        "strategy_2": "Earthquakes are not frequent in your area. You can look for a safer and better appartment next time."
+    },
+    {
+        "situation": "My vacation was cancelled due to COVID-19.",
+        "situation_type": "1",
+        "strategy_1": "Try to forget about it, go to the nearest beach at sunset and watch the sky to relax a bit.",
+        "strategy_2": "Travelling far can be exhausting. This is an opportunity so see nice places close to home."
+    },
+    {
+        "situation": "There was a fire in my kitchen yesterday.",
+        "situation_type": "1",
+        "strategy_1": "Try not to ruminate about it too much, there are sale advertisements in the mall, buy yourself something.",
+        "strategy_2": "It's good that the rest of the house is safe. You now have a chance to rennovate the old kitchen."
+    },
+    {
+        "situation": "I've lost my laptop somewhere at the mall.",
+        "situation_type": "1",
+        "strategy_1": "Cheer up, go to the movies, buy some popcorn, enjoy a funny one and unwind.",
+        "strategy_2": "At least all the files are backed up. The content is what's important really."
+    },
+    {
+        "situation": "I think I just broke my pinky toe.",
+        "situation_type": "1",
+        "strategy_1": "Don't panic, have a spa day, relax and enjoy a pampering massage.",
+        "strategy_2": "It's a very common injury at home. You can only wait till it heals."
+    },
+    {
+        "situation": "My house was flooded this morning.",
+        "situation_type": "1",
+        "strategy_1": "Try to calm down, you could use some beach getaway or a short trip to somewhere nice.",
+        "strategy_2": "It's good you have a good insurance. Meanwhile, you can play pool with your kids."
+    },
+    {
+        "situation": "I couldn't sleep at night due to noise.",
+        "situation_type": "1",
+        "strategy_1": "Take it easy, go to the pool at the new Sports Center, have a good swim to recharge and rest.",
+        "strategy_2": "Something unusual must have happened at your neighbor's yesterday. Your place is usually so quiet."
+    },
+    {
+        "situation": "I broke the screen of my new smartphone.",
+        "situation_type": "1",
+        "strategy_1": "Life goes on, go to the nearest Pizza place and order the best one they have on the menu.",
+        "strategy_2": "You will have more free time off the phone now. This is an excellent chance to finish a book."
+    },
+    {
+        "situation": "I've lost a wallet with some money.",
+        "situation_type": "1",
+        "strategy_1": "Try not to focus on it too much, there are new great shows to binge on Netflix lately.",
+        "strategy_2": "Only a small amount of money is gone. Use this occasion to switch to a credit card."
+    },
+    {
+        "situation": "I was involved in a minor car accident.",
+        "situation_type": "1",
+        "strategy_1": "Don't worry about it, take a break from everything and enjoy a good meal in a fancy restaurant.",
+        "strategy_2": "Importantly, you are safe and sound. The scratch on your car will be less annoying in the future."
+    },
+    {
+        "situation": "I've lost money in the stock market.",
+        "situation_type": "1",
+        "strategy_1": "Don't let this spoil your day, take part in a challenging game, such as a crossword.",
+        "strategy_2": "The stock market has been very unstable lately. It always recovers in the long run."
+    },
+    {
+        "situation": "My new car is a total loss after a crash.",
+        "situation_type": "1",
+        "strategy_1": "Try to put the thoughts about it away, go to a new art exhibition in the city tonight.",
+        "strategy_2": "It's just the car that was damaged, not you. Thanks to the insurance you can now buy a new one."
+    },
+    {
+        "situation": "I dropped my new smartphone into the toilet.",
+        "situation_type": "1",
+        "strategy_1": "Don't be preoccupied with this, go outside, engage in some sport and enjoy the endorphins.",
+        "strategy_2": "You probably were distracted. You can create a healthier habbit to leave the phone outside."
+    },
+    {
+        "situation": "I failed an exam in one of my courses.",
+        "situation_type": "1",
+        "strategy_1": "Don't think about it, go for a trail run, breathe the good air and take a break from it all.",
+        "strategy_2": "This course is probably so challenging. For sure you can do better when given a second chance."
+    },
+    {
+        "situation": "I accidentally deleted an important document.",
+        "situation_type": "1",
+        "strategy_1": "Take your mind off this, get pizza and icecream to go and take yourself to the nearest park.",
+        "strategy_2": "Using computers can be tricky for everyone. It will take you half of the time to rewrite this."
+    },
+      {
+            "situation": "Me and my boyfriend broke up.",
+            "situation_type": "2",
+            "strategy_1": "Try not to think about it. Go camping by the sea, make a campfire and watch the stars.",
+            "strategy_2": "This relationship is not solely dependent on you. Maybe he needed some time for himself."
+        },
+        {
+            "situation": "I was rejected by the guy I was interested in.",
+            "situation_type": "2",
+            "strategy_1": "Don't take this too hard. Go to karaoke downtown, sing out loud until dawn and relax.",
+            "strategy_2": "Maybe he is already involved with someone or preoccupied with his ex. This is a waste of time."
+        },
+        {
+            "situation": "I've argued with my boss.",
+            "situation_type": "2",
+            "strategy_1": "Forget about it for a while. Go have a spa day, get pampered and enjoy every minute of it.",
+            "strategy_2": "He might be too proud to agree with your novel ideas. You always try to think out of the box."
+        },
+        {
+            "situation": "Someone tried to steal my wallet on the street.",
+            "situation_type": "2",
+            "strategy_1": "Try to put this aside. Have a quiet evening at home, order delicious food and drink wine.",
+            "strategy_2": "Maybe the poor guy needed money for food and clothes. You are lucky you weren't hurt."
+        },
+        {
+            "situation": "My mom is driving me crazy.",
+            "situation_type": "2",
+            "strategy_1": "Don't worry about it. Order some junk food, make popcorn, binge over Netflix and chill.",
+            "strategy_2": "This is what mothers do when they are worried. Remember that she wants the best for you."
+        },
+        {
+            "situation": "My mom is ignoring me lately.",
+            "situation_type": "2",
+            "strategy_1": "Cheer up. Go on a day trip in nature, observe beautiful flowers blooming by the stream.",
+            "strategy_2": "Maybe she is super busy lately with her new job. A mom doesn't simply ignore her child."
+        },
+        {
+            "situation": "I feel excluded from my friends' circle.",
+            "situation_type": "2",
+            "strategy_1": "Try to keep it together. Stay up late and play some amazing online video games.",
+            "strategy_2": "No one is meeting anyway because of COVID-19. Social distancing is popular these days."
+        },
+        {
+            "situation": "I wasn't invited to my best friend's birthday.",
+            "situation_type": "2",
+            "strategy_1": "Take it easy. Go hiking in the mountains up north and breathe fresh air.",
+            "strategy_2": "Maybe the party didn't take place at all. She must have an explanation."
+        },
+        {
+            "situation": "My best friend forgot my birthday.",
+            "situation_type": "2",
+            "strategy_1": "Don't be upset. Go to the new gym nearby and try one of the new classes opened up lately.",
+            "strategy_2": "Maybe she is super busy with her troubles lately. She might still call you and apologize."
+        },
+        {
+            "situation": "My boyfriend forgot our anniversary.",
+            "situation_type": "2",
+            "strategy_1": "Try to calm down. Go to the nearest coffee place and have some good time by yourself.",
+            "strategy_2": "Maybe he is distracted lately. Usually, he is caring and attentive to your relationship. "
+        },
+        {
+            "situation": "My friend told me I gained weight.",
+            "situation_type": "2",
+            "strategy_1": "Try not to think about it too much. Play a challenging online game, such as Sudoku.",
+            "strategy_2": "Sometimes people are insensitive. She probably meant well, thinking about your health."
+        },
+        {
+            "situation": "I was yelled at in a supermarket.",
+            "situation_type": "2",
+            "strategy_1": "Try to push the thoughts about it away. Go to a new art exhibition in the city and have a blast.",
+            "strategy_2": "Maybe they just had a bad day and it wasn't personal. People are sometimes rude to strangers."
+        },
+        {
+            "situation": "My parents do not appreciate my professional path.",
+            "situation_type": "2",
+            "strategy_1": "Take it easy. Go for a run in the country side, take a bit of a break from all the troubles.",
+            "strategy_2": "Parents sometimes want to express themselves via the children. But you are your own person."
+        },
+        {
+            "situation": "My boyfriend refuses to propose.",
+            "situation_type": "2",
+            "strategy_1": "Life goes on. Go have a beer in one of the good pubs downtown and relax a little bit.",
+            "strategy_2": "He is probably occupied with his career and needs to feel stable. He loves you much though."
+        },
+        {
+            "situation": "My boyfriend cheated on me.",
+            "situation_type": "2",
+            "strategy_1": "Take your mind off this. Go to a bar downtown, meet new people, have few drinks and unwind.",
+            "strategy_2": "You are lucky to find out his real attitude for you before you committed. You deserve better."
+        },
+        {
+            "situation": "I've argued with my husband.",
+            "situation_type": "2",
+            "strategy_1": "Don't worry about it. There are sales in the mall, go shopping and have fun.",
+            "strategy_2": "We all have our disagreements. This is an opportunity to strengthen your relationship."
+        },
+        {
+            "situation": "My recent post in social media was ignored.",
+            "situation_type": "2",
+            "strategy_1": "Don't let this spoil your day. Go to the bookstore and buy yourself something good to read.",
+            "strategy_2": "The social media feed is so overloaded with advertising. Maybe it wasn't visible to anyone."
+        },
+        {
+            "situation": "I wasn't asked how I feel when I was sick recently.",
+            "situation_type": "2",
+            "strategy_1": "Don't let this bother you. Go to the beach, bring a watermelon, and catch the waves.",
+            "strategy_2": "Maybe your friends didn't know it was serious. They must have thought it's only a flu."
+        },
+        {
+            "situation": "My friend was promoted and I was not.",
+            "situation_type": "2",
+            "strategy_1": "Try not to think about this. Take a short vacation and see some new places.",
+            "strategy_2": "This is an opportunity to change your job. Every employer would love to have you."
+        },
+        {
+            "situation": "I got in a fight with my neighbour over my parking spot.",
+            "situation_type": "2",
+            "strategy_1": "Don't let this get to you. Subscribe and listen to few amazing podcasts on Spotify.",
+            "strategy_2": "He probably was in a rush. Maybe he is new in the building and didn't know it's yours."
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+SPINJson={
+ "title": "Questionnaire 3 out of 3",
+ "description": "Please read each statement and indicate how much the statement applied to you over the past week: 1 - Not at all, 3 - Somewhat, 5 - Extremely. Thank you.",
+ "displayRateDescriptionsAsExtremeItems":false,
+ "pages": [
+  {
+      "title": "Page {pageno} of {pagecount}",
+      "name": "page1",
+      "elements": [
+      {
+       "type": "rating",
+       "name": "question1",
+       "title": "I am afraid of people in authority.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question2",
+       "title": "I am bothered by blushing in front of people.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question3",
+       "title": "Parties and social events scare me.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question4",
+       "title": "I avoid talking to people I don't know.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question5",
+       "title": "Being criticized scares me a lot.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question6",
+       "title": "I avoid doing things or speaking to people for fear of embarrassment.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question7",
+       "title": "Sweating in front of people causes me distress.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question8",
+       "title": "I avoid going to parties.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question9",
+       "title": "Over the last two weeks, how much time did you spend worrying about the 1977 Olympics?",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+    ],
+  },
+  { 
+    "title": "Page {pageno} of {pagecount}",
+   "name": "page2",
+    "elements": [
+      {
+       "type": "rating",
+       "name": "question10",
+       "title": "I avoid activities in which I am the center of attention.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question11",
+       "title": "Talking to strangers scares me.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question12",
+       "title": "I avoid having to give speeches.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question13",
+       "title": "I would do anything to avoid being criticized.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question14",
+       "title": "Heart palpitations bother me when I am around people.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question15",
+       "title": "I am afraid of doing things when people might be watching.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question16",
+       "title": "Being embarrassed or looking stupid are among my worst fears.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question17",
+       "title": "I avoid speaking to anyone in authority.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      },
+      {
+       "type": "rating",
+       "name": "question18",
+       "title": "Trembling or shaking in front of others is distressing to me.",
+       "isRequired": true,
+       "rateMax": 5,
+       "minWidth": "500px",
+       "minRateDescription": "Not at all",
+       "maxRateDescription": "Extremely"
+      }
+    ],
+  }
+  ],
+ "showPageTitles": true
+}

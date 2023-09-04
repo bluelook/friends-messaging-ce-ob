@@ -1,0 +1,346 @@
+QCAEJson={
+ "title": "Questionnaire 1 out of 3",
+ "description": "The following statements inquire about your thoughts and feelings in a variety of situations. For each statement, indicate how well it describes you from 1 (strongly) disagree to 4 (strongly agree). Read each item carefully before responding. Answer as honestly as you can. Thank you.",
+ "pages": [
+  {
+    "title": "Page {pageno} of {pagecount}",
+    "name": "page1",
+    "elements": [
+      {
+       "type": "rating",
+       "name": "question1",
+       "title": "I sometimes find it difficult to see things from the \"other guy's\" point of view.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question2",
+       "title": "I am usually objective when I watch a film or play, and I don't often get completely caught up in it.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question3",
+       "title": "I try to look at everybody's side of a disagreement before I make a decision.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question4",
+       "title": "I sometimes try to understand my friends better by imagining how things look from their perspective.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question5",
+       "title": "When I am upset at someone, I usually try to \"put myself in his shoes\" for a while.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question6",
+       "title": "Before criticizing somebody, I try to imagine how I would feel if I was in their place.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question7",
+       "title": "I often get emotionally involved with my friends' problems.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question8",
+       "title": "I am inclined to get nervous when others around me seem to be nervous.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question9",
+       "title": "People I am with have a strong influence on my mood.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question10",
+       "title": "It affects me very much when one of my friends seems upset.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+      {
+       "type": "rating",
+       "name": "question11",
+       "title": "I often get deeply involved with the feelings of a character in a film, play, or novel.",
+       "isRequired": true,
+       "rateMax": 4,
+       "minWidth": "500px",
+       "minRateDescription": "Strongly Disagree",
+       "maxRateDescription": "Strongly Agree"
+      },
+    ],
+  },
+  { 
+    "title": "Page {pageno} of {pagecount}",
+   "name": "page2",
+    "elements": [
+    
+    {
+     "type": "rating",
+    "name": "question12",
+     "title": "I get very upset when I see someone cry.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+     "name": "question13",
+     "title": "I am happy when I am with a cheerful group and sad when the others are glum.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+     "name": "question14",
+     "title": "It worries me when others are worrying and panicky.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question15",
+     "title": "I can easily tell if someone else wants to enter a conversation.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question16",
+     "title": "I would be able to lift a 1 lb (0.5 kg) weight.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question17",
+     "title": "I can pick up quickly if someone says one thing but means another.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question18",
+     "title": "It is hard for me to see why some things upset people so much.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question19",
+     "title": "I find it easy to put myself in somebody else's shoes.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question20",
+     "title": "I am good at predicting how someone will feel.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+      "name": "question21",
+     "title": "I am quick to spot when someone in a group is feeling awkward or uncomfortable.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+     {
+     "type": "rating",
+      "name": "question22",
+     "title": "Other people tell me I am good at understanding how they are feeling and what they are thinking.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },  
+   ],
+  },
+  {
+    "title": "Page {pageno} of {pagecount}",
+    "name": "page3",
+    "elements": [    
+    {
+     "type": "rating",
+      "name": "question23",
+     "title": "I can easily tell if someone else is interested or bored with what I am saying.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+     "name": "question24",
+     "title": "Friends talk to me about their problems as they say that I am very understanding.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+     "name": "question25",
+     "title": "I can sense if I am intruding, even if the other person does not tell me.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    }, 
+    {
+     "type": "rating",
+     "name": "question26",
+     "title": "I can easily work out what another person might want to talk about.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    }, 
+    {
+     "type": "rating",
+     "name": "question27",
+     "title": "I can tell if someone is masking their true emotion.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    }, 
+    {
+     "type": "rating",
+     "name": "question28",
+     "title": "I am good at predicting what someone will do.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+     "name": "question29",
+     "title": "I can usually appreciate the other person's viewpoint, even if I do not agree with it.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+    "name": "question30",
+     "title": "I usually stay emotionally detached when watching a film.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+     {
+     "type": "rating",
+    "name": "question31",
+     "title": "I always try to consider the other fellow's feelings before I do something.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    },
+    {
+     "type": "rating",
+     "name": "question32",
+     "title": "Before I do something I try to consider how my friends will react to it.",
+     "isRequired": true,
+     "rateMax": 4,
+     "minWidth": "500px",
+     "minRateDescription": "Strongly Disagree",
+     "maxRateDescription": "Strongly Agree"
+    }
+   ],
+  }
+ ],
+ "showPageTitles": true
+}

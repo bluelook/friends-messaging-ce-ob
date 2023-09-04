@@ -1,0 +1,212 @@
+PTMJson={
+   "title": "Questionnaire 2 out of 3",
+   "description": "Below are a number of statements that may or may not describe you. Please indicate HOW MUCH EACH STATEMENT DESCRIBES YOU from 1 (Does not describe me at all) to 5 (Describes me greatly). Read each item carefully before responding. Answer as honestly as you can. Thank you.",  
+   "pages": [
+      {
+        "title": "Page {pageno} of {pagecount}",
+        "name": "page1",
+        "elements": [
+            {
+             "type": "rating",
+             "name": "question1",
+             "title": "I can help others best when people are watching me.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question2",
+             "title": "It is most fulfilling to me when I can comfort someone who is very distressed.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question3",
+             "title": "When other people are around, it is easier for me to help needy others",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question4",
+             "title": "I think that one of the best things about helping others is that it makes me look good.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question5",
+             "title": "I get the most out of helping others when it is done in front of others.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question6",
+             "title": "I tend to help people who are in a real crisis or need.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question7",
+             "title": "When people ask me to help them, I don't hesitate.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question8",
+             "title": "I prefer to donate money anonymously.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question9",
+             "title": "I tend to help people who hurt themselves badly.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question10",
+             "title": "I believe that donating goods or money works best when it is tax-deductible.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+            {
+             "type": "rating",
+             "name": "question11",
+             "title": "I tend to help needy others most when they do not know who helped them.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },
+             {
+             "type": "rating",
+             "name": "question12",
+             "title": "I would feel bad if a loved one unexpectedly died.",
+             "isRequired": true,
+             "minRateDescription": "Does not describe me at all",
+             "maxRateDescription": "Describes me greatly"
+            },    
+       ],
+      },
+      {
+        "title": "Page {pageno} of {pagecount}",
+        "name": "page2",
+        "elements": [           
+       {
+         "type": "rating",
+         "name": "question13",
+         "title": "I tend to help others particularly when they are emotionally distressed.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        }, 
+       {
+         "type": "rating",
+         "name": "question14",
+         "title": "Helping others when I am in the spotlight is when I work best.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question15",
+         "title": "It is easy for me to help others when they are in a dire situation.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question16",
+         "title": "Most of the time, I help others when they do not know who helped them.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question17",
+         "title": "I believe I should receive more recognition for the time and energy I spend on charity work.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question18",
+         "title": "I respond to helping others best when the situation is highly emotional.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question19",
+         "title": "I never hesitate to help others when they ask for it.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question20",
+         "title": "I think that helping others without them knowing is the best type of situation.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question21",
+         "title": "One of the best things about doing charity work is that it looks good on my resume.", 
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question22",
+         "title": "Emotional situations make me want to help needy others.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question23",
+         "title": " I often make anonymous donations because they make me feel good.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+        {
+         "type": "rating",
+         "name": "question24",
+         "title": "I feel that if I help someone, they should help me in the future.",
+         "isRequired": true,
+         "minRateDescription": "Does not describe me at all",
+         "maxRateDescription": "Describes me greatly"
+        },
+       ],
+      }
+     ],
+     "showPageTitles": true
+}
+
