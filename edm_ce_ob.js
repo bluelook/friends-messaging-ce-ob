@@ -1,7 +1,7 @@
 /*exp 3: competitive empathy one block version*/
 $(document).ready(function(){
     //whether in the testing mode
-    var testing = false;
+    var testing = true;
     //Initial Experiment Parameters
     var ip=0;
    $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data){
@@ -20,6 +20,15 @@ $(document).ready(function(){
         MobileNotice();
     }
 
+    if(!testing)
+    {
+        if(!window.console) window.console = {};
+        var methods = ["log", "debug", "warn", "info"];
+        for(var i=0;i<methods.length;i++)
+        {
+            console[methods[i]] = function(){};
+        }
+    }
     //for real experiment num of trials is 40, other numbers are for testing
     var NumTrials = 40;
     console.log("number of trials per experiment is " + NumTrials);
@@ -64,8 +73,7 @@ $(document).ready(function(){
     var preferredName = null;
 
     var emoji = null;
-   
-
+    
     /* average speed advisor */
     var min_rt = 7000;
     var max_rt = 9000; 
@@ -76,33 +84,26 @@ $(document).ready(function(){
 
     /*very slow advisor
     var min_rt = 9000;
-    var max_rt = 10000;*/
+    var max_rt = 10000;*/    
 
-    //randomize the order of the combinations
-    //var indexArray = randomArrayShuffle(Array(NumTrials).fill().map((element, index) => index));
-    //console.log("index array is: " + indexArray);       
-
-    //randomize type of experiment between participants: 1 - dist, 2 - reap
+    /*randomize type of experiment between participants: 1 - dist, 2 - reap
     var randExpType = Math.random();
     if (randExpType < 0.5) {
         exp_type = 1;
     } else {
         exp_type = 2;
-    } 
+    } */
+    //static experiment type: 1 - dist, 2 - reap
+    exp_type = 1;
     console.log("experiment type is: " + exp_type); 
 
+    //which strategy advisor advises same as exp type or opposite: 1 - dist, 2 - reap
+    var advisor_type = exp_type; // 3 - exp_type;
+    console.log("advisor type is: " + advisor_type); 
+
     //randomize type of stimuli between participants, in this case of actors
-    var randStimuliType = Math.random();
-    if (randStimuliType < 0.5) {
-        stimuliType = 1;
-    } else {
-        stimuliType = 2;
-    } 
-    console.log("stimuli type is: " + stimuliType);   
-  
-    //the randomization is done via indexArray that is shuffled
-    //var situationsArray = repeatSequence([[1,1,2,2]], NumTrials/4); //20 trials -> 20/4=5; 1 - non-relationship, 2 - relationship
-    //console.log("situations array is: " + situationsArray);
+    var stimuliType = (Math.random() <= 0.5) ? 1 : 2; 
+    console.log("stimuli type is: " + stimuliType);
 
     Survey.StylesManager.applyTheme("modern");
 
@@ -117,17 +118,17 @@ $(document).ready(function(){
 
         //Welcome();
         //Information();//Start with information sheet 
-        AvatarSelection();    
+        //AvatarSelection();    
         //genInstructions(1);
         //Instructions(1,"person",1);
-        //actor_1_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Red&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Serious&skinColor=Light';
-        //actor_2_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Red&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Serious&skinColor=Light';
-        //participant_avatar = "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurly&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Blue03&eyeType=Default&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Pale";
-        //advisor_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShaggyMullet&accessoriesType=Prescription02&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Black';
-        //ClientPic = actor_1_avatar;
-        //actor_name = 'Amy';
-        //advisor_name = 'Zoe'
-        //Options(1);
+        actor_1_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Red&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Serious&skinColor=Light';
+        actor_2_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Red&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Serious&skinColor=Light';
+        participant_avatar = "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurly&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Blue03&eyeType=Default&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Pale";
+        advisor_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShaggyMullet&accessoriesType=Prescription02&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Black';
+        ClientPic = actor_1_avatar;
+        actor_name = 'Amy';
+        advisor_name = 'Zoe';
+        Options(1);
         //SurveyPageDetails(InsertQCAE, QCAEJson);//temp to start from QCAE questionnaire
         //SurveyPageDetails(InsertPTM, PTMJson);//temp to start from QCAE questionnaire
         //SurveyPageDetails(InsertSPIN, SPINJson);//temp to start from SPIN questionnaire
@@ -162,9 +163,10 @@ $(document).ready(function(){
                                                 <li class="list-group-item list-group-item-primary">2. The experiment game</li>\n\
                                                 <li class="list-group-item list-group-item-light">Play the \"Friends Messaging\" Game </li>\n\
                                                 <li class="list-group-item list-group-item-primary">3. Questionnaires</li>\n\
-                                                <li class="list-group-item list-group-item-light">Answer three questionnaires</li></ul>\n\
-                                                <br><p class="lead">Overall the experiment is expected to take about 20 minutes.</p>\n\
-                                                <p class="lead"><b>Please make sure to set the zoom level of your browser to 100%.</b></p>\n\
+                                                <li class="list-group-item list-group-item-light">Answer questionnaires</li></ul>\n\
+                                                <br><p class="lead">Overall the experiment is expected to take about 25 minutes.</p>\n\
+                                                <p class="lead"><b>The experiment is expected to perform optimally when the browser zoom level is set to 100%. <br>\n\
+                                                In the event that you encounter difficulties progressing to the next page, please consider reducing the zoom level to 75%.</b></p>\n\
                                                 <p class="lead">Ready? Press below to start!</p>\n\
                                         </div>\n\
                                         <div class="col-md-3"></div>\n\
@@ -657,7 +659,7 @@ $(document).ready(function(){
                             </div><div class="col-1"></div></div><br>';
                 break;
             case 4:
-                Info = Info + '<h4> You and another player, '+ advisor +', are both members of a support group with ' + actor + '. Both of you assist ' + actor + ' in ' + his_her +' distress.</h4>' ; 
+                Info = Info + '<h4> You and another player '+ advisor +' are both members of a support group with ' + actor + '. Both of you assist ' + actor + ' in ' + his_her +' distress.</h4>' ; 
                 ThisImage = '<div class="row p-1 ">\n\
                                 <div class="col-2"></div>\n\
                                 <div class="col-8 table-responsive border border-light bg-light">\n\
@@ -680,7 +682,7 @@ $(document).ready(function(){
                            
                 break;    
             case 5:                
-                Info = Info + '<h4> On each trial, you and another player, ' + advisor + ', will be presented with a text message from '+ actor +' describing '+ his_her+' distress.</h4>';
+                Info = Info + '<h4> On each trial, you and another player ' + advisor + ' will be presented with a text message from '+ actor +' describing '+ his_her+' distress.</h4>';
                 ThisImage = '<div id="main" class="row p-1 border border-light bg-light">\n\
                             <div id="left" class="col-4"></div>\n\
                             <div id="middle" class="col-4 border border-dark rounded">' + whatsappHeader +'<div id="situation" class="container bg-image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url(\'images\/whatsapp_background.jpg\'); height: 50vh">\n\
@@ -701,8 +703,8 @@ $(document).ready(function(){
                 break;       
             case 6:
                 Info = Info + '<h4> The text message will be followed by two options to assist '+ actor + '. <br>Each option has some probability of helping ' + him_her+'.\n\
-                    <br> Some people prefer one type of help, while others go for an alternative. \n\
-                    <br>Your and the other player\'s task is to help distressed ' + actor + ' as much as possible. Both of you should select a response. <br>Choose the response that will be most helpful to '+ actor+ ' by using your mouse.</h4>';
+                    <br> While some individuals may prefer one form of assistance, others may favor alternative options. <br>Your task, along with the other player '+ advisor+ ', is to provide maximum support to ' + actor + ' in distress and identify '+ his_her+' preferred type of help.\n\
+                    <br>Both of you should select a response. <br>Choose the response that will be most helpful to '+ actor+ ' by using your mouse.</h4>';
                 ThisImage = '<div class="row p-1 border border-light bg-light">\n\
                                 <div id="left" class="col-4">\n\
                                     <div class="msg border">\n\
@@ -844,31 +846,10 @@ $(document).ready(function(){
                                 </div>\n\
                             </div>\n\
                          </div>';                              
-                break; 
-                /* reply to the advisor and not to 'you' in case we need it for the instructions
-                <div id="message" class="speech-wrapper align-items-end row">\n\
-                                            <div class="col-2">\n\
-                                                <img id="mainStimuli" src='+ actor_avatar+' class="rounded-circle border border-light bg-gradient" width="30" height="30">\n\
-                                            </div>\n\
-                                            <div class="col-10 bubble">\n\
-                                                <div class="txt reply">\n\
-                                                    <p class="name">' + actor + '</p>\n\
-                                                </div>\n\
-                                                <div id="bubble" class="bubble alt right reply">\n\
-                                                    <div class="txt">\n\
-                                                        <p class="you" style="color: rgb(226, 0, 15);">' + advisor +'</p><p id="strategy1" class="message follow">Let\'s go to a cafe this afternoon. We can order delicious and comforting food there</p><p></p>\n\
-                                                    </div>\n\
-                                                </div>\n\
-                                                <div class="txt">\n\
-                                                    <p class="message" style="font-size:22px">&#128524</p><span class="timestamp">12:24 PM</span>\n\
-                                                </div>\n\
-                                                <div class="bubble-arrow"></div>\n\
-                                            </div>\n\
-                                        </div>\n\
-                                        */
+                break;
             case 9:
-                Info = Info +'<h4>How does ' + actor +' choose to listen to you or the other player, '+ advisor + '?<br> ' + actor + ' chooses to listen to one of you based on how succesfull your responses were and how quickly you responded in the past. <br> \n\
-                Once '+ actor +' has replied, the "Next" button will become available for you to proceed to the next trial. <br><b>If the button is missing from the screen, please try to lower the zoom level of your browser, i.e., to 75%. </b> <br>There are ' + NumTrials + ' trials \n\
+                Info = Info +'<h4>How does ' + actor +' choose to listen to you or the other player '+ advisor + '?<br> ' + actor + ' chooses to listen to one of you based on how succesfull your responses were and how quickly you responded in the past. <br> \n\
+                Once '+ actor +' has replied, the "Next" button will become available for you to proceed to the next trial. <b>If the button is not visible on the screen, please consider reducing your browser\'s zoom level to 75%.</b> <br>There are ' + NumTrials + ' trials \n\
                 in this experiment. Good luck!</h4>';
                 ThisImage = '<div class="row">\n\
                                 <div class="col-2"></div>\n\
@@ -1057,17 +1038,8 @@ $(document).ready(function(){
                         + percentageComplete +'" aria-valuemin="0" aria-valuemax="100">'+ percentageComplete +'%</div></div>';
 
         var mood_name = null;
-        var mood_type = null;
-        //var situationName = null;
-        //var situationType = situationsArray[indexArray[TrialNum-1]]// % NumTrials] //index starts with 0;
-
-        var randMoodType = Math.random();
-        //randomize type of mood between participants: 1 - angry, 2 - sad
-        if (randMoodType < 0.5) {
-            mood_type = 1;
-        } else {
-            mood_type = 2;
-        } 
+        //randomize type of mood between participants: 
+        var mood_type = (Math.random() <= 0.5) ? 1 : 2; // 1 - angry, 2 - sad
         
         //decide upon the mood name and the emoji
         if(mood_type == 1)// 1 - angry
@@ -1222,18 +1194,20 @@ $(document).ready(function(){
         }, 3000);        
     }
 
-    //TODO is this the right policy for the advisor?
+    //advisor policy
     function OtherChoice(){
-        //create probability for advisor advice, means the advisor is mostly incorrect (in e.g. 80% of the cases as prob)
+        //create probability for advisor advice, means the advisor is mostly correct/incorrect (in e.g. 80% of the cases as prob)
         var advisorProb = Math.round((Math.random() + Number.EPSILON)*100)/100;
         var advisor_choice=null;
 
-        if((advisorProb < prob && exp_type == 1) || (advisorProb > prob && exp_type == 2)) {
-            advisor_choice = 2; // preferred option is 2 - reappraisal (will be normalized to 0) - opposite of the target in 80% experiment type 1 and 20% experiment type 2                 
+        if((advisorProb < prob && advisor_type == 1) || (advisorProb > prob && advisor_type == 2)) {
+            //advisor_choice = 2; // preferred option is 2 - reappraisal (will be normalized to 0) - opposite of the target in 80% experiment type 1 and 20% experiment type 2
+            advisor_choice = 1; //preferred option is 1 - distraction (will be normalized to 1) - same as the target in 80% experiment type 1 and 20% experiment type 2
          
         } else{ 
        //reappraisal: probability (e.g. 80%) of cases for block 2 or in probability (e.g. 20%) of cases for block 1
-            advisor_choice = 1; //preferred option is 1 - distraction (will be normalized to 1) - opposite of the target in 80% experiment type 2 and 20% experiment type 1
+            //advisor_choice = 1; //preferred option is 1 - distraction (will be normalized to 1) - opposite of the target in 80% experiment type 2 and 20% experiment type 1
+            advisor_choice = 2; // preferred option is 2 - reappraisal (will be normalized to 0) - same as the target in 80% experiment type 2 and 20% experiment type 1
         }    
         console.log("advisor choice is: "+ advisor_choice);
 
@@ -1866,7 +1840,7 @@ $(document).ready(function(){
     function InsertFinishedAjax(){     
         $.ajax({
             type: 'POST',
-            data: {ID:SubID, partID: partID, gender: participant_gender, part_avatar: participant_avatar, exp_type: exp_type},
+            data: {ID:SubID, partID: partID, gender: participant_gender, part_avatar: participant_avatar, exp_type: exp_type, advisor_type: advisor_type},
             //async: false,
             url: 'php/FinishCode.php',
             dataType: 'json',
@@ -1932,12 +1906,13 @@ $(document).ready(function(){
         var JsonDetails =  JSON.parse(JSON.stringify(jsonDet));
         var survey_details = new Survey.Model(JsonDetails);
         var title_pref_response = 'If YOU had to choose the most suitable response for';
-        var title_ending = ', it would be';
-        var target_title = title_pref_response + ' your distressed friend ' + actor_name + title_ending;
-        var advisor_title = title_pref_response + ' the distressed OTHER PLAYER ' + advisor_name + title_ending;
-        var advisor_adv_title = 'If THE OTHER PLAYER ' + advisor_name + ' had to choose the most suitable response for your distressed friend '+ actor_name + title_ending;
-        var new_target_title = title_pref_response + ' your ANOTHER distressed friend Sam' + title_ending;
+        var title_ending = ' in distress, it would be';
+        var target_title = title_pref_response + ' YOUR FRIEND ' + actor_name + title_ending;
+        var advisor_title = title_pref_response + ' the OTHER PLAYER ' + advisor_name + title_ending;
+        var advisor_adv_title = 'If the OTHER PLAYER ' + advisor_name + ' had to choose the most suitable response for YOUR MUTUAL FRIEND '+ actor_name + title_ending;
+        var new_target_title = title_pref_response + ' your ANOTHER FRIEND Sam' + title_ending;
         
+        survey_details.setVariable("participant_avatar", participant_avatar);
         survey_details.setVariable("target_title", target_title);
         survey_details.setVariable("target_name", actor_name);
         survey_details.setVariable("advisor_title", advisor_title);
