@@ -116,7 +116,7 @@ $(document).ready(function(){
         partID =CreateCode();//randomize testing part id number for experiment
         console.log("testing PartID is: "+ partID);
 
-        //Welcome();
+        Welcome();
         //Information();//Start with information sheet 
         //AvatarSelection();    
         //genInstructions(1);
@@ -128,7 +128,7 @@ $(document).ready(function(){
         ClientPic = actor_1_avatar;
         actor_name = 'Amy';
         advisor_name = 'Zoe';
-        Options(1);
+        //Options(1);
         //SurveyPageDetails(InsertQCAE, QCAEJson);//temp to start from QCAE questionnaire
         //SurveyPageDetails(InsertPTM, PTMJson);//temp to start from QCAE questionnaire
         //SurveyPageDetails(InsertSPIN, SPINJson);//temp to start from SPIN questionnaire
@@ -521,7 +521,7 @@ $(document).ready(function(){
         var Info = '<div class="row p-4"><div class="col-2"></div><div class="col-8">';
         Info = Info + '<h4> You are about to start the "Friends Messaging" game!<br>\n\
                        The experiment contains '+ NumTrials + ' direct messaging conversations. <br>\n\
-                       Before the start of each block, detailed instructions will be provided.\n\
+                       Before the start of the experiment detailed instructions will be provided.\n\
                        You can go back and forth between the instruction screens.</h4></div><div class="col-2"></div></div>';
 
         $('#TextBoxDiv').html(Title + Info);
@@ -538,7 +538,7 @@ $(document).ready(function(){
                 $('#TextBoxDiv').remove();
                 $('#Stage').empty();
                 $('#Bottom').empty();
-                Instructions(1); //start the first block instructions
+                Instructions(1); //start the instructions
              });
     }
 
