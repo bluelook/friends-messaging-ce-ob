@@ -8,18 +8,63 @@ RatingJson={
             "elements": [
                 {
                     "type": "html",
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div><div class='col-9'></div></div></div>"
+                },
+                {         
+                    "type": "rating",
+                    "name": "question1",
+                    "title": "{helping}",
+                    "isRequired": true,
+                    "rateMax": 7,
+                    "mininumRateDescription": "Not At All",
+                    "maximumRateDescription": "Extremely",
+                    "startWithNewLine": false,
+                    "hideNumber": true,
+                    "startWithNewLine": true,
+               
+                }           
+            ]
+        },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div><div class='col-9></div></div></div>"
+                },
+                {         
+                    "type": "rating",
+                    "name": "question2",
+                    "title": "{liking}",
+                    "isRequired": true,
+                    "rateMax": 7,
+                    "mininumRateDescription": "Not At All",
+                    "maximumRateDescription": "Extremely",
+                    "startWithNewLine": false,
+                    "hideNumber": true,
+                    "startWithNewLine": true,
+               
+                }           
+            ]
+        },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "html",
                     "name": "info",
-                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{target_name}</h3></div><div class='col'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div></div></div>"
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-1 d-flex justify-content-center align-items-center'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{target_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div><div class='col-5'></div></div></div>"
                 },
                 {         
                     "type": "radiogroup",
-                    "name": "question1",
+                    "name": "question3",
                     "title": "{target_title}",
                     "isRequired": true,
                     "choices": [
                         {"value": 1, "text": "Doing something to be distracted from the situation"},
                         {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
-                        {"value": 0, "text": "I have no idea"}
                     ],
                     "startWithNewLine": true,           
                 },
@@ -31,17 +76,16 @@ RatingJson={
             "elements": [
                 {
                     "type": "html",
-                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src={advisor_pic} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{target_name}</h3></div><div class='col-3'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div></div></div>"
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src={advisor_pic} class='rounded-circle' height='200'></div><div class='col-1 d-flex justify-content-center align-items-center'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{target_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div><div class='col-5'></div></div></div>"
                 },
                 {         
                     "type": "radiogroup",
-                    "name": "question2",
+                    "name": "question4",
                     "title": "{advisor_adv_title}",
                     "isRequired": true,
                     "choices": [
                         {"value": 1, "text": "Doing something to be distracted from the situation"},
                         {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
-                        {"value": 0, "text": "I have no idea"}
                     ],
                     "startWithNewLine": true,                
                 },
@@ -53,17 +97,16 @@ RatingJson={
             "elements": [
                 {
                     "type": "html",
-                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-3'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div></div></div>"
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-1 d-flex justify-content-center align-items-center'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-3'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div><div class='col-5'></div></div></div>"
                 },
                 {         
                     "type": "radiogroup",
-                    "name": "question3",
+                    "name": "question5",
                     "title": "{advisor_title}",
                     "isRequired": true,
                     "choices": [
                         {"value": 1, "text": "Doing something to be distracted from the situation"},
                         {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
-                        {"value": 0, "text": "I have no idea"}
                     ],
                     "startWithNewLine": true,                
                 },
@@ -75,22 +118,68 @@ RatingJson={
             "elements": [
                 {
                     "type": "html",
-                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>Sam</h3></div><div class='col-3'><img id = 'mainStimuli' src='{new_target_pic}' class='rounded-circle' height='200'></div></div></div>"
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-1 d-flex justify-content-center align-items-center'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>Sam</h3></div><div class='col-2'><img id = 'mainStimuli' src='{new_target_pic}' class='rounded-circle' height='200'></div><div class='col-5'></div></div></div>"
                 },
                 {         
                     "type": "radiogroup",
-                    "name": "question4",
+                    "name": "question6",
                     "title": "{new_target_title}",
                     "isRequired": true,
                     "choices": [
                         {"value": 1, "text": "Doing something to be distracted from the situation"},
                         {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
-                        {"value": 0, "text": "I have no idea"}
                     ],
                     "startWithNewLine": true,                
                 } 
              ],
         },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page4",
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div></div></div>"
+                },
+                {         
+                    "type": "rating",
+                    "name": "question7",
+                    "title": "{distraction}",
+                    "isRequired": true,
+                    "rateMax": 7,
+                    "mininumRateDescription": "Not At All",
+                    "maximumRateDescription": "Extremely",
+                    "startWithNewLine": false,
+                    "hideNumber": true,
+                    "startWithNewLine": true,
+               
+                }           
+            ]
+        },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page4",
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<div class='container-fluid'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div></div></div>"
+                },
+                {         
+                    "type": "rating",
+                    "name": "question8",
+                    "title": "{reappraisal}",
+                    "isRequired": true,
+                    "rateMax": 7,
+                    "mininumRateDescription": "Not At All",
+                    "maximumRateDescription": "Extremely",
+                    "startWithNewLine": false,
+                    "hideNumber": true,
+                    "startWithNewLine": true,
+               
+                }           
+            ]
+        },
+        
     ],
  "showPageTitles": true
 }

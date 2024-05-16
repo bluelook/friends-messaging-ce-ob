@@ -36,10 +36,10 @@ data_male={ "data": [
         "strategy_2": "Earthquakes are rare here. Look for a safer apartment in the next rental for security."
         },
         {
-            "situation": "My vacation was cancelled due to COVID-19.",
-            "situation_type": "1",
+        "situation": "I lost my personal bag on public transport.",
+        "situation_type": "1",
         "strategy_1": "Head to the nearest beach and watch the sunset. A small getaway, resembling a peaceful escape.",
-        "strategy_2": "Far travel is tiring. Seize the chance to explore nearby beautiful places close to home."
+        "strategy_2": "Losing your bag is difficult. Use this opportunity to reevaluate what essentials you truly need."
         },
         {
             "situation": "There was a fire in my kitchen yesterday.",

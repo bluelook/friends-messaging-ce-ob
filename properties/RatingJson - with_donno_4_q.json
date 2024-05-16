@@ -1,0 +1,96 @@
+RatingJson={
+        "title": "End of Experiment Survey",
+        "description": "The following statements inquire about your thoughts and possible actions as the result of the experiment you just finished.",
+        "pages": [
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "html",
+                    "name": "info",
+                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{target_name}</h3></div><div class='col'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div></div></div>"
+                },
+                {         
+                    "type": "radiogroup",
+                    "name": "question1",
+                    "title": "{target_title}",
+                    "isRequired": true,
+                    "choices": [
+                        {"value": 1, "text": "Doing something to be distracted from the situation"},
+                        {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
+                        {"value": 0, "text": "I have no idea"}
+                    ],
+                    "startWithNewLine": true,           
+                },
+            ],
+        },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-2'><img id = 'mainStimuli' src={advisor_pic} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{target_name}</h3></div><div class='col-3'><img id = 'mainStimuli' src='{target_pic}' class='rounded-circle' height='200'></div></div></div>"
+                },
+                {         
+                    "type": "radiogroup",
+                    "name": "question2",
+                    "title": "{advisor_adv_title}",
+                    "isRequired": true,
+                    "choices": [
+                        {"value": 1, "text": "Doing something to be distracted from the situation"},
+                        {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
+                        {"value": 0, "text": "I have no idea"}
+                    ],
+                    "startWithNewLine": true,                
+                },
+            ],
+        },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page3",
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>{advisor_name}</h3></div><div class='col-3'><img id = 'mainStimuli' src='{advisor_pic}' class='rounded-circle' height='200'></div></div></div>"
+                },
+                {         
+                    "type": "radiogroup",
+                    "name": "question3",
+                    "title": "{advisor_title}",
+                    "isRequired": true,
+                    "choices": [
+                        {"value": 1, "text": "Doing something to be distracted from the situation"},
+                        {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
+                        {"value": 0, "text": "I have no idea"}
+                    ],
+                    "startWithNewLine": true,                
+                },
+            ],
+        },
+        {
+            "title": "Page {pageno} of {pagecount}",
+            "name": "page4",
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<div class='container'><div class='row'><div class='col-1'><h3 align='center'>You</h3></div><div class='col-2'><img id = 'mainStimuli' src={participant_avatar} class='rounded-circle' height='200'></div><div class='col-2'><img src='images/arrow-right' width='150'></div><div class='col-1'><h3 align='center'>Sam</h3></div><div class='col-3'><img id = 'mainStimuli' src='{new_target_pic}' class='rounded-circle' height='200'></div></div></div>"
+                },
+                {         
+                    "type": "radiogroup",
+                    "name": "question4",
+                    "title": "{new_target_title}",
+                    "isRequired": true,
+                    "choices": [
+                        {"value": 1, "text": "Doing something to be distracted from the situation"},
+                        {"value": 2, "text": "Rethinking the situation from a different viewpoint"},
+                        {"value": 0, "text": "I have no idea"}
+                    ],
+                    "startWithNewLine": true,                
+                } 
+             ],
+        },
+    ],
+ "showPageTitles": true
+}

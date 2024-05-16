@@ -110,17 +110,16 @@ $(document).ready(function(){
     if(testing){
         NumTrials = 40;
         console.log("number of testing trials per experiment is " + NumTrials);
-        participant_gender = "female";
-        //participant_gender = "male";
+        participant_gender = "woman";
+        //participant_gender = "man";
         retrieveExpData(participant_gender);
         partID =CreateCode();//randomize testing part id number for experiment
         console.log("testing PartID is: "+ partID);
 
-        Welcome();
+        //Welcome();
         //Information();//Start with information sheet 
         //AvatarSelection();    
         //genInstructions(1);
-        //Instructions(1,"person",1);
         actor_1_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Red&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Serious&skinColor=Light';
         actor_2_avatar = 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Red&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Serious&skinColor=Light';
         participant_avatar = "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurly&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Blue03&eyeType=Default&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Pale";
@@ -128,6 +127,7 @@ $(document).ready(function(){
         ClientPic = actor_1_avatar;
         actor_name = 'Amy';
         advisor_name = 'Zoe';
+        Instructions(1);
         //Options(1);
         //SurveyPageDetails(InsertQCAE, QCAEJson);//temp to start from QCAE questionnaire
         //SurveyPageDetails(InsertPTM, PTMJson);//temp to start from QCAE questionnaire
@@ -138,7 +138,7 @@ $(document).ready(function(){
     }else{
        if(!mobile){
             Welcome();//Start with welcome screen
-            //retrieveExpData("female");
+            //retrieveExpData("woman");
             //genInstructions(1); 
             //Instructions(2, "mood");
             //Options(1);
@@ -164,7 +164,7 @@ $(document).ready(function(){
                                                 <li class="list-group-item list-group-item-light">Play the \"Friends Messaging\" Game </li>\n\
                                                 <li class="list-group-item list-group-item-primary">3. Questionnaires</li>\n\
                                                 <li class="list-group-item list-group-item-light">Answer questionnaires</li></ul>\n\
-                                                <br><p class="lead">Overall the experiment is expected to take about 25 minutes.</p>\n\
+                                                <br><p class="lead">Overall the experiment is expected to take about 20 minutes.</p>\n\
                                                 <p class="lead"><b>The experiment is expected to perform optimally when the browser zoom level is set to 100%. <br>\n\
                                                 In the event that you encounter difficulties progressing to the next page, please consider reducing the zoom level to 75%.</b></p>\n\
                                                 <p class="lead">Ready? Press below to start!</p>\n\
@@ -354,7 +354,7 @@ $(document).ready(function(){
                         <h3 class="text-on-pannel text-primary" align="center">Create your avatar</h3></div>';
         var instructions = '<div class="row p-2">\n\
                                 <div class="col-1"></div>\n\
-                                <div class="col-10 d-flex justify-content-center"><h4>Please create your avatar by selecting the relevant features.<br> This will be the face presented to the other participants.</h4>\n\
+                                <div class="col-10 d-flex justify-content-center"><h4>Please create your avatar by selecting the relevant features.<br> You can play with the features till you reach the desired avatar.<br> This will be the face presented to the other participants.</h4>\n\
                                 </div>\n\
                                 <div class="col-1"></div>\n\
                             </div>';
@@ -366,9 +366,11 @@ $(document).ready(function(){
                         <select id="topType" class="form-control" control-id="ControlID-3">\n\
                             <option value="LongHairCurly">Long Hair Curly</option>\n\
                             <option value="LongHairStraight">Long Hair Straight</option>\n\
+                             <option value="LongHairBigHair">Long Hair Big Hair</option>\n\
                             <option value="ShortHairShortCurly">Short Hair Curly</option>\n\
                             <option value="ShortHairShortFlat">Short Hair Flat</option>\n\
                             <option value="ShortHairSides">Short Hair Sides</option>\n\
+                            <option value="ShortHairShortRound">Short Hair Round</option>\n\
                             <option value="NoHair">No hair</option>\n\
                             <option value="Hat">Hat</option>\n\
                         </select>\n\
@@ -471,7 +473,7 @@ $(document).ready(function(){
             currentActor = stimuliType; 
             //decide upon the actor and his/her name
             if(currentActor == 1) {//  Amy, Ben
-                if(participant_gender == "female"){
+                if(participant_gender == "woman"){
                     actor_name = 'Amy';
                     advisor_name = 'Zoe'
                 } else {
@@ -480,7 +482,7 @@ $(document).ready(function(){
                 }
                 ClientPic = actor_1_avatar;
             } else { // 2 - Liv, Joe
-                if(participant_gender == "female"){
+                if(participant_gender == "woman"){
                     actor_name = 'Liv';
                     advisor_name = 'Zoe'
                 } else {
@@ -553,12 +555,12 @@ $(document).ready(function(){
         var advisor = null;
         var ThisImage = null;
 
-        if (participant_gender != "male"){//all the other types of gender will see the female version
-            participant_gender = "female";
+        if (participant_gender != "man"){//all the other types of gender will see the woman version
+            participant_gender = "woman";
         }
         //define actors based on participant gender
         switch(participant_gender){
-            case "female":
+            case "woman":
                 a1_actor = "Amy";
                 a2_actor = "Liv";
                 him_her = "her";
@@ -566,7 +568,7 @@ $(document).ready(function(){
                 he_she = "she";
                 advisor = "Zoe"
                 break;
-            case "male":
+            case "man":
                 a1_actor = "Ben";
                 a2_actor = "Joe";
                 him_her = "him";
@@ -1539,7 +1541,7 @@ $(document).ready(function(){
     //retrieve and suffle the data, so the order of situations is random
     function retrieveExpData(gender){
 
-        if(gender == "male"){ 
+        if(gender == "man"){ 
             jsonData =  randomArrayShuffle(JSON.parse(JSON.stringify(data_male)).data);
         }
         else{
@@ -1599,7 +1601,7 @@ $(document).ready(function(){
         var csv = ConvertToCSV_quest(Json1);
         //console.log("The results are:" +csv);
         //save participant's gender
-        participant_gender = Json1[0]["question2"];//female, male, non-binary, prefer not to say
+        participant_gender = Json1[0]["question2"];//woman, man, non-binary, prefer not to say
         console.log("Participant's gender is " + participant_gender);
         retrieveExpData(participant_gender);
         $.ajax({
@@ -1909,8 +1911,17 @@ $(document).ready(function(){
         var title_ending = ' in distress, it would be';
         var target_title = title_pref_response + ' YOUR FRIEND ' + actor_name + title_ending;
         var advisor_title = title_pref_response + ' the OTHER PLAYER ' + advisor_name + title_ending;
-        var advisor_adv_title = 'If the OTHER PLAYER ' + advisor_name + ' had to choose the most suitable response for YOUR MUTUAL FRIEND '+ actor_name + title_ending;
+        var advisor_adv_title = 'If the OTHER PLAYER ' + advisor_name + ' had to choose the most suitable response for your MUTUAL FRIEND '+ actor_name + title_ending;
         var new_target_title = title_pref_response + ' your ANOTHER FRIEND Sam' + title_ending;
+        var helping = "Rate " + advisor_name + ",  the OTHER PLAYER, as a good friend who helps others in distress.";
+        var liking = "How much did you like interacting with " + advisor_name + ", the OTHER PLAYER?";
+        var distraction = "How much do you think suggesting 'doing something to be distracted from the situation' is a good approach to help others in distress?";
+        var reappraisal = "How much do you think suggesting 'rethinking the situation from a different viewpoint' is a good approach to help others in distress?";
+        //how much did you feel connected to the other player
+        //how much would you like to participate in the same group again with the other player
+        //how much would like to know the other player better
+        //how much do you feel that you can understand the other player
+        //how much do you identify with the other player
         
         survey_details.setVariable("participant_avatar", participant_avatar);
         survey_details.setVariable("target_title", target_title);
@@ -1923,6 +1934,10 @@ $(document).ready(function(){
         survey_details.setVariable("target_pic", ClientPic);
         survey_details.setVariable("advisor_pic", advisor_avatar);
         survey_details.setVariable("new_target_pic", 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurly&accessoriesType=Prescription02&hairColor=Brown&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light');
+        survey_details.setVariable("liking", liking);
+        survey_details.setVariable("helping", helping);
+        survey_details.setVariable("distraction", distraction);
+        survey_details.setVariable("reappraisal", reappraisal);
         
         $('#Main').removeClass('container').addClass('container-fluid');
         $('#Stage').removeClass('row').addClass('row-fluid');
